@@ -59,8 +59,8 @@ K...
 """
     ]
     for i, board in enumerate(boards, start=1):
-        result = checkmate(board)
-        print(result)
+        checkmate(board)
+
 
 if __name__ == "__main__":
     main()

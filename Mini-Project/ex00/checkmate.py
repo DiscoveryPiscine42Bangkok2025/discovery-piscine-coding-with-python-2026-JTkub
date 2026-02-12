@@ -19,7 +19,6 @@ def checkSquare(grid: list) -> bool:
 
 def walk(grid, row, col, dr, dc, kr, kc):
     size = len(grid)
-
     r = row + dr
     c = col + dc
 
@@ -100,7 +99,7 @@ def checkmate(board):
                     print("Success")
                     return
     print("Fail")
-
+    
 """
 [
     K = 1, 1
