@@ -1,3 +1,4 @@
+#ค้นหาตำแหน่งของตัวหมากบนกระดาน
 def checkPos(grid: list, text: str):
     size = len(grid)
     amount = 0
@@ -19,7 +20,7 @@ def checkSquare(grid: list) -> bool:
 
 def walk(grid, row, col, dr, dc, kr, kc):
     size = len(grid)
-    r = row + dr
+    r = row + dr #ตำแหน่งหมาก + ทิศทางการเดิน
     c = col + dc
 
     while 0 <= r < size and 0 <= c < size:

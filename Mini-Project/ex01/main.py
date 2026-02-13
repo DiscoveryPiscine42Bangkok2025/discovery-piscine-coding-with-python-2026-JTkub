@@ -1,5 +1,5 @@
 from checkmate import *
-from os.path import isfile
+from os.path import isfile, join
 import sys
 
 def main():
@@ -8,9 +8,12 @@ def main():
     argc = len(argv)
     if argc > 0: 
         for board in argv:
-            if isfile(board):
-                with open(board) as file:
+            path = join("boards", board)
+            if isfile(path):
+                with open(path) as file:
                     checkmate(file.read())
+            else:
+                print("Error")
 
 if __name__ == "__main__":
     main()
